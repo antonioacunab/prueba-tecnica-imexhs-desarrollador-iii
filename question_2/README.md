@@ -1,5 +1,39 @@
 # File Handling and Array Operations
 
+## Run the files
+
+The files in this folder are separated to execute different methods depending on your needs.
+
+First of all, install the dependencies by locating at the root of the project and running:
+
+```bash
+pip install -r dependencies.txt
+```
+
+Then, in order to test the list_folder_contents method, locate on this folder and run:
+
+```bash
+python3 list_folder_contents.py
+```
+
+In order to test the read_csv method, locate on this folder and run:
+
+```bash
+python3 read_csv.py
+```
+
+In order to test the read_dicom method, locate on this folder and run:
+
+```bash
+python3 read_dicom.py
+
+# or
+
+python3 read_dicom_2.py
+```
+
+## Instructions
+
 Write a Python script that implements a class, FileProcessor, with methods to handle file and data processing tasks. The class should have the following functionality:
 
 ## Attributes
