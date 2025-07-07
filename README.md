@@ -49,3 +49,7 @@ npm install
 
 npm start
 ```
+
+This will start the server. Once it is running, open your browser and navigate to `http://localhost:4200/`.
+
+You can go to the README.md file in question_4 for further details
