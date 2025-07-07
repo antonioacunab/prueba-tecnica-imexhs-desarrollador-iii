@@ -1,0 +1,9 @@
+/.venv
+
+**/*/__pycache__
+**/*/report.txt
+**/*/logs.txt
+**/*/*.png
+
+**/*/node_modules
+**/*/.vscode
