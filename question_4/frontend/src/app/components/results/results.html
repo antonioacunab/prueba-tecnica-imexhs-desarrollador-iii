@@ -1,0 +1,18 @@
+<main class="p-6">
+  <h2 class="text-2xl mb-4 font-bold">Analysis Results</h2>
+
+  <div *ngIf="results.length === 0" class="text-gray-500">
+    No results yet. Upload an image to start.
+  </div>
+
+  <div *ngFor="let result of results" class="mb-6 p-4 border rounded shadow flex gap-10 w-[40%]">
+    <img [src]="result.imageSrc" alt="Stain image" class="h-[100px] w-fit border" />
+
+    <div class="text-sm space-y-1 flex flex-col">
+      <p><strong>Image Size:</strong> {{ result.imageWidth }} × {{ result.imageHeight }}</p>
+      <p><strong>Total Random Points:</strong> {{ result.totalPoints }}</p>
+      <p><strong>Points Inside Stain:</strong> {{ result.insideStain }}</p>
+      <p><strong>Estimated Area:</strong> {{ result.estimatedArea | number:'1.0-2' }}</p>
+    </div>
+  </div>
+</main>

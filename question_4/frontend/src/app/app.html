@@ -1,0 +1,27 @@
+
+<main class="bg-gray p-10 h-[100vh] w-[80vw] mx-auto">
+  <h1 class="text-xl text-center h-12 font-bold">Coding Test IMEXHS Developer III</h1>
+  <div class="flex w-full gap-5">
+    <a
+        [routerLink]="['/upload']"
+        (click)="changeActiveTab('upload')"
+        class="w-full text-center content-center rounded-lg h-10"
+        [ngClass]="activeTab == 'upload' ? 'bg-cyan-900 text-white shadow-2xl' : 'bg-slate-400 text-white'"
+    >
+        Upload an image
+    </a>
+    <a
+        [routerLink]="['/results']"
+        (click)="changeActiveTab('results')"
+        class="w-full text-center content-center rounded-lg h-10"
+        [ngClass]="activeTab == 'results' ? 'bg-cyan-900 text-white shadow-2xl' : 'bg-slate-400 text-white'"
+    >
+        Results
+    </a>
+  </div>
+
+  <div class="h-[80%] bg-slate-400 mt-10 rounded-lg p-10">
+    <router-outlet />
+  </div>
+</main>
+
